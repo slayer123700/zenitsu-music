@@ -1,0 +1,63 @@
+{
+  "name": "Zenitsu-Music-Bot",
+  "description": "Telegram Music Bot powered by Python and Node.js",
+  "repository": "https://github.com/Zfini/Devine",
+  "logo": "https://i.ibb.co/THd3s2g/photo-2024-12-14-04-12-49-7448115698112397328.jpg",
+  "env": {
+    "API_ID": {
+      "description": "API ID from Telegram",
+      "value": "23169258"
+    },
+    "API_HASH": {
+      "description": "API HASH from Telegram",
+      "value": "aecf7c2d85b6aaa0e567b1fe03852441"
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token for your Telegram bot",
+      "value": "7461331070:AAGv0WYbdv_xpbIFmhg_PoDvZTcrbREz7rs"
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB connection URI",
+      "value": "mongodb+srv://Zenix:nezu2koch61n@cluster0.eu81e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    },
+    "LOGGER_ID": {
+      "description": "Logger Group ID",
+      "value": "-1002116643591"
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram ID",
+      "value": "5268691896"
+    },
+    "SUPPORT_CHANNEL": {
+      "description": "Support Channel URL",
+      "value": "https://t.me/hxh_botsupport"
+    },
+    "SUPPORT_CHAT": {
+      "description": "Support Chat URL",
+      "value": "https://t.me/zenitsu_bot_support"
+    },
+    "STRING_SESSION": {
+      "description": "String Session for Telegram Bot",
+      "value": "BQFhiOoAHx3UzBBmScZyjE2I5PqXMs8jJ4hjllYvOr6VgzMQtG0oT1yN7Z6Z2IjeDoQdoKUF7wIE9ELBK87aUNZuPuKPw5xRr_wMOW8gV8FI4dZFBehj_62wKFdueU19hjQQbmxcKe1fSD0Np7xaIUOhR7BwGs_pnnsRKUlysBUaFFsj_16bHvu2qc4HCvgjOGPXcSY4vyDaadBnEWhRPPy74LPc4fcjApHVuSVUSEcm-cMWWkCeuZZxZXCW9VjNfAiQMMa63jBShrIM1D0p8V2talo5c9EDrlpPUNO6YD4D152iers-hmv2x8DNdNGk9EbB7dRLFu6u1kYxNWLLXL3bOmfwdQAAAAGdRV_JAA"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+  "scripts": {
+    "postdeploy": "python3 -m Devine"
+  }
+}
