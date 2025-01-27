@@ -62,4 +62,3 @@
   "scripts": {
     "postdeploy": "python3 -m Devine"
   }
-}
