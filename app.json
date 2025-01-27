@@ -1,7 +1,7 @@
 {
   "name": "Zenitsu-Music-Bot",
   "description": "Telegram Music Bot powered by Python and Node.js",
-  "repository": "https://github.com/Zfini/Devine",
+  "repository": "https://github.com/slayer123700/zenitsu-music",
   "logo": "https://i.ibb.co/THd3s2g/photo-2024-12-14-04-12-49-7448115698112397328.jpg",
   "env": {
     "API_ID": {
