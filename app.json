@@ -1,63 +1,72 @@
-{
-  "name": "Zenitsu-Music-Bot",
-  "description": "Telegram Music Bot powered by Python and Node.js",
-  "repository": "https://github.com/Zfini/Devine",
-  "logo": "https://i.ibb.co/THd3s2g/photo-2024-12-14-04-12-49-7448115698112397328.jpg",
-  "env": {
-    "API_ID": {
-      "description": "API ID from Telegram",
-      "value": "23169258"
-    },
-    "API_HASH": {
-      "description": "API HASH from Telegram",
-      "value": "aecf7c2d85b6aaa0e567b1fe03852441"
-    },
-    "BOT_TOKEN": {
-      "description": "Bot Token for your Telegram bot",
-      "value": "7461331070:AAGv0WYbdv_xpbIFmhg_PoDvZTcrbREz7rs"
-    },
-    "MONGO_DB_URI": {
-      "description": "MongoDB connection URI",
-      "value": "mongodb+srv://Zenix:nezu2koch61n@cluster0.eu81e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    },
-    "LOGGER_ID": {
-      "description": "Logger Group ID",
-      "value": "-1002116643591"
-    },
-    "OWNER_ID": {
-      "description": "Your Telegram ID",
-      "value": "5268691896"
-    },
-    "SUPPORT_CHANNEL": {
-      "description": "Support Channel URL",
-      "value": "https://t.me/hxh_botsupport"
-    },
-    "SUPPORT_CHAT": {
-      "description": "Support Chat URL",
-      "value": "https://t.me/zenitsu_bot_support"
-    },
-    "STRING_SESSION": {
-      "description": "String Session for Telegram Bot",
-      "value": "BQFhiOoAHx3UzBBmScZyjE2I5PqXMs8jJ4hjllYvOr6VgzMQtG0oT1yN7Z6Z2IjeDoQdoKUF7wIE9ELBK87aUNZuPuKPw5xRr_wMOW8gV8FI4dZFBehj_62wKFdueU19hjQQbmxcKe1fSD0Np7xaIUOhR7BwGs_pnnsRKUlysBUaFFsj_16bHvu2qc4HCvgjOGPXcSY4vyDaadBnEWhRPPy74LPc4fcjApHVuSVUSEcm-cMWWkCeuZZxZXCW9VjNfAiQMMa63jBShrIM1D0p8V2talo5c9EDrlpPUNO6YD4D152iers-hmv2x8DNdNGk9EbB7dRLFu6u1kYxNWLLXL3bOmfwdQAAAAGdRV_JAA"
-    }
-  },
-  "formation": {
-    "worker": {
-      "quantity": 1
-    }
-  },
-  buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
+"name": "itachi 𝙼𝚄𝚂𝙸𝙲",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/b61227af05544deb76a34.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "SHUKLA",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
     ],
-  "scripts": {
-    "postdeploy": "python3 -m Devine"
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "29308061",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "462de3dfc98fd938ef9c6ee31a72d099",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "6018803920",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session from @STRINGSEASO_NBOT on Telegram.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "-1002392274240",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
   }
-}
