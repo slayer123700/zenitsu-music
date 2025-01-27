@@ -17,7 +17,7 @@
       "value": "7461331070:AAGv0WYbdv_xpbIFmhg_PoDvZTcrbREz7rs"
     },
     "MONGO_DB_URI": {
-      "description": "the MongoDB connection URI",
+      "description": "MongoDB connection URI",
       "value": "mongodb+srv://Zenix:nezu2koch61n@cluster0.eu81e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     },
     "LOGGER_ID": {
@@ -46,19 +46,18 @@
       "quantity": 1
     }
   },
-  "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "heroku/nodejs"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-          }
-      ],
-      "stack": "container"
-  }
+  buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
   "scripts": {
     "postdeploy": "python3 -m Devine"
   }
+}
