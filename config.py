@@ -5,33 +5,33 @@ from pyrogram import filters
 load_dotenv()
 
 
-API_ID = 
+API_ID = 22317880
 
-API_HASH = ""
+API_HASH = "5e341628f7176989bcffb2b8fc22445f"
 
-BOT_TOKEN = ""
+BOT_TOKEN = "7656219426:AAF5748P2BNbK250vSii7XE9VNxSD_ThDq0"
 
-BOT_ID = 
+BOT_ID = 7656219426
 
-BOT_USERNAME = ""
+BOT_USERNAME = "suzune_probot"
 
-OWNER_USERNAME = ""
+OWNER_USERNAME = "SLAYER1237"
 
-BOT_NAME = "˹"
+BOT_NAME = "Suzune"
 
-ASSUSERNAME = ""
+ASSUSERNAME = "KHWAISH_HOON"
 
 
-MONGO_DB_URI = "
+MONGO_DB_URI = "mongodb+srv://musicbotxd:musicbotxd@cluster0.6thyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DURATION_LIMIT_MIN = 500000
 
-LOGGER_ID = -
+LOGGER_ID = -1002392274240
 
-DISASTER_LOG = -
+DISASTER_LOG = -1002392274240
 
-OWNER_ID = 
+OWNER_ID = 6018803920
 
-SPECIAL_USER = 
+SPECIAL_USER = 5268691896
 
 HEROKU_APP_NAME = None
 
